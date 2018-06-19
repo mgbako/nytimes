@@ -2,9 +2,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+
 import { AngularFireModule } from "angularfire2";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 import { AngularFireAuthModule } from "angularfire2/auth";
+import { Angular4PaystackModule } from "angular4-paystack";
 
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -16,6 +18,7 @@ import { SubscriptionComponent } from "./subscription/subscription.component";
 import { LoginComponent } from "./login/login.component";
 import { SectionsComponent } from "./sections/sections.component";
 import { environment } from "../environments/environment";
+import { AuthService } from "./services/auth.service";
 
 @NgModule({
   declarations: [
@@ -34,9 +37,10 @@ import { environment } from "../environments/environment";
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    Angular4PaystackModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
