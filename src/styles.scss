@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,700');
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.column-title {
+  font-size: 2rem;
+}
+
+.column-sub-title {
+  font-size: 1.5rem;
+}

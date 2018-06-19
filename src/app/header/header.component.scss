@@ -1,0 +1,23 @@
+.navbar-item {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.login-button,
+.subscribe-button {
+  background-color: #6288a5 !important;
+  border-color: #4d7b9f !important;
+  color: #fff;
+  font-weight: 700;
+  height: 30px;
+  font-size: 0.6875rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
