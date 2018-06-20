@@ -1,0 +1,43 @@
+.sub {
+  margin-top: 100px;
+}
+
+.card {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  .card-title {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+    span {
+      font-size: 10px;
+      font-weight: lighter
+    }
+  }
+}
+
+.basic {
+  background: #2e84ed
+}
+
+.allAccess {
+  background: #0f4a92
+}
+
+.plus {
+  background: #0b2544
+}
+
+button {
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  font-size: 100%;
+  font-weight: 600;
+  color: #363636;
+  cursor: pointer;
+}

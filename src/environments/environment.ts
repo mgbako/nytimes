@@ -10,7 +10,7 @@ export const environment = {
     authDomain: "nytimes-522eb.firebaseapp.com",
     databaseURL: "https://nytimes-522eb.firebaseio.com",
     projectId: "nytimes-522eb",
-    storageBucket: "",
     messagingSenderId: "873706134113"
-  }
+  },
+  paystack_public_key: "pk_test_f05624147a4cac1f31d6482ff5b633c5ce593771"
 };

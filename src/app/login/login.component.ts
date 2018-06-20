@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { NgForm } from "@angular/forms";
+
 import * as firebase from "firebase";
 import { AngularFireAuth } from "angularfire2/auth";
 import { AuthService } from "../services/auth.service";
@@ -15,5 +17,9 @@ export class LoginComponent implements OnInit {
 
   loginWithGoogle() {
     this.authService.login();
+  }
+
+  submit(form: NgForm){
+    console.log(form);
   }
 }

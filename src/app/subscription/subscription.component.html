@@ -1,3 +1,56 @@
-<p>
-  subscription works!
-</p>
+<div class="columns sub">
+  <div class="column">
+    <div class="card basic d-flex">
+      <div class="card-content">
+        <h2 class="card-title">Basic</h2>
+        <div class="card-img">
+          <img src="" alt="">
+        </div>
+        <div class="content">
+          <h2 class="price">&#x20a6; 100.00
+            <span>&#x20a6; 200.00/week</span>
+          </h2>
+
+          <button angular4-paystack [key]="'pk_test_f05624147a4cac1f31d6482ff5b633c5ce593771'" [email]="'mailexample@mail.com'" [amount]="100"
+            [ref]="'2637458694'" [class]="'button'" (close)="paymentCancel()" (callback)="done($event)">Pay with Paystack</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card allAccess">
+      <div class="card-content">
+        <h2 class="card-title">All Access</h2>
+        <div class="card-img">
+          <img src="" alt="">
+        </div>
+        <div class="content">
+          <h2 class="price">&#x20a6; 150.00
+            <span>&#x20a6; 300.00/week</span>
+          </h2>
+
+          <button angular4-paystack [key]="'pk_test_f05624147a4cac1f31d6482ff5b633c5ce593771'" [email]="'mailexample@mail.com'" [amount]="150"
+            [ref]="'2637458695'" [class]="'button'" (close)="paymentCancel()" (callback)="done($event)">Pay with Paystack</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card plus">
+      <div class="card-content">
+        <h2 class="card-title">All Access Plus</h2>
+        <div class="card-img">
+          <img src="" alt="">
+        </div>
+        <div class="content">
+          <h2 class="price">&#x20a6; 200.00
+            <span>&#x20a6; 400.00/week</span>
+          </h2>
+
+          <button angular4-paystack [key]="'pk_test_f05624147a4cac1f31d6482ff5b633c5ce593771'" [email]="'mailexample@mail.com'" [amount]="200"
+            [ref]="'2637458691'" [class]="'button'" (close)="paymentCancel()" (callback)="done($event)">Pay with Paystack</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

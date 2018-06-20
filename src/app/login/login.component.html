@@ -18,21 +18,27 @@
       <form #f="ngForm" (ngSubmit)="submit(f)">
         <div class="field">
           <div class="control">
-            <input class="input" type="text" placeholder="Username or Email">
+            <input type="email" ngModel name="email" #email="ngModel" class="input" placeholder="Username or Email" required>
           </div>
+          <div class="help is-danger" *ngIf="email.touched && !email.valid">
+            <p *ngIf="email.errors.required">Email is Required</p>
+          </div>
+
         </div>
 
         <div class="field">
           <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="password" placeholder="Password">
+            <input type="password" ngModel name="password" #password="ngModel" class="input" placeholder="Password" required>
             <span class="icon is-small is-left">
               <i class="fa fa-lock"></i>
             </span>
-            <span class="icon is-small is-right">
+            <span class="icon is-small is-right" *ngIf="password.touched && !password.valid">
               <i class="fa fa-exclamation-triangle"></i>
             </span>
           </div>
-          <p class="help is-danger">This email is invalid</p>
+          <div class="help is-danger" *ngIf="password.touched && !password.valid">
+            <p *ngIf="password.errors.required">Password is Required</p>
+          </div>
         </div>
 
         <div class="field">
